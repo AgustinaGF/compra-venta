@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
         const hashedPassword = await userService.hashPassword(usuario);
         //agregamos el hashpassword a la propiedad password en body request
         usuario.password = hashedPassword;
-        usuario.Misproductos = [];
+        usuario.misProductos = [];
         let usuarioNuevo = userService.crearUsuario(usuario);
         res.status(201).json(usuarioNuevo)
     } catch (error) {

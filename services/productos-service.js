@@ -1,4 +1,4 @@
-const dataStore = require("../DB/database");
+const dataStore = require("../db/database");
 
 //crear producto
 module.exports.crearProducto = function (producto, idUser) {
