@@ -9,3 +9,7 @@ module.exports.crearProducto = function (producto, idUser) {
         return producto;
     }
 };
+
+module.exports.listarProductos = function () {
+    return dataStore.productos;
+};
